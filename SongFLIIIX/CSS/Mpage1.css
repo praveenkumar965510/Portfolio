@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    /* background-color: #11141a; */
+}
+
+/* Header CSS Styling  */
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-left: 10px;
+    width:100%;
+    background: #11141a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;    
+}
+
+@media (min-width:480px) {
+    .logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    
+}    
+
+    nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;}
+}
+
+.logo{
+    margin-right: 32rem;
+}
+
+
+nav button{
+    border: 2px solid rgb(248, 251, 252);
+    background-color: #f8f5f5;
+    border-radius: 20px;
+    width: 110px;
+    height: 25px ;
+    margin-left: 2rem;
+    margin-right: 0%; 
+}
+
+button:hover{
+    transition: 0.3s;
+    color: rgb(228, 118, 118);
+}
+
+.logo{
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 900 ;
+}
+
+.logo:hover{
+    transition: 0.3s;
+    color: #0ef ;
+}
+
+nav a {
+    font-style: italic;
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 15px;
+    transition: .3s;
+
+}
+
+nav a:hover{
+    color: #0ef;
+}
+
+/* Movies Part CSS Styling */
+
+.container{
+    width: 100%;
+    height: 99vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .slider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+.container ul{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+}
+
+.container ul li{
+    list-style: none;
+    cursor: pointer;
+    margin: 10px;
+    
+}
+
+.container ul li video{
+    width: 100px;
+    height: 80px;
+    border-radius: 90px;
+    transition: all 0.3s;
+}
+
+.container ul li video:hover{
+    transform: scale(1.1);
+}
+
+video{
+    width: 100%;
+    height: 100%;
+}
+
+/* Row One CSS  */
+.latest_releases ul{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+}
+
+.latest_releases ul li{
+    list-style: none;
+    cursor: pointer;
+    margin: 10px;
+    
+}
+
+.latest_releases ul li video{
+    width: 200px;
+    border-radius: 25px;
+    transition: all 0.3s;
+}
+
+.latest_releases ul li video:hover{
+    transform: scale(1.1);
+}
