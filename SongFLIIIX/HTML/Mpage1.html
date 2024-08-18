@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SONGFLIIX </title>
+    <link rel="stylesheet" href="../2. CSS/Mpage1.css">
+</head>
+<body>
+    <div>
+        <header>
+            <a href="#" class="logo"> SONGFLIIX </a>
+    
+            <nav>
+                <a href="#">MySpace</a>
+                <a href="#"> Music</a>
+                <a href="#">Categories</a>
+                <a href="#">Languages</a>
+                <a href="#"> Settings </a>
+                <button type="button">LOGOUT</button>
+                
+            </nav>
+        </header>
+
+        <div class="container">
+            <video src="./Media/Vedios/MASTER TEASER (2).mp4" class="slider" autoplay loop controls></video>
+
+            <ul>
+                <li onclick="videoslider('./Media/Vedios/MASTER TEASER (2).mp4')"><video src="./Media/Vedios/MASTER TEASER (2).mp4"></video></li>
+
+                <li onclick="videoslider('./Media/Vedios/Geetha Govindham.mp4')"><video src="./Media/Vedios/Geetha Govindham.mp4"></video></li>
+
+                <li onclick="videoslider('../1. HTML/Media/Vedios/Manjummel Boys - Trailer.mp4')"><video src="../1. HTML/Media/Vedios/Manjummel Boys - Trailer.mp4"></video></li>
+
+                <li onclick="videoslider('./Media/Vedios/Love Today.mp4')"><video src="./Media/Vedios/Love Today.mp4">        </video></li>
+
+                <li onclick="videoslider('../1. HTML/Media/Vedios/Premalu - Trailer.mp4')"><video src="../1. HTML/Media/Vedios/Premalu - Trailer.mp4"></video></li>
+
+                <li onclick="videoslider('../1. HTML/Media/Vedios/GOAT Trailer.mp4')"><video src="../1. HTML/Media/Vedios/GOAT Trailer.mp4"></video></li>
+            
+            </ul>
+        </div>
+    </div>
+<br>
+<br>
+    <div>
+        
+        <div class="container">
+
+            <ul>
+                <li><video src="./Media/Vedios/MASTER TEASER (2).mp4"></video></li>
+
+                <li><video src="./Media/Vedios/Geetha Govindham.mp4"></video></li>
+
+                <li onclick="videoslider('../1. HTML/Media/Vedios/Manjummel Boys - Trailer.mp4')"><video src="../1. HTML/Media/Vedios/Manjummel Boys - Trailer.mp4"></video></li>
+
+                <li onclick="videoslider('./Media/Vedios/Love Today.mp4')"><video src="./Media/Vedios/Love Today.mp4">        </video></li>
+
+                <li onclick="videoslider('../1. HTML/Media/Vedios/Premalu - Trailer.mp4')"><video src="../1. HTML/Media/Vedios/Premalu - Trailer.mp4"></video></li>
+
+                <li onclick="videoslider('./Media/Vedios/MASTER TEASER (2).mp4')"><video src="./Media/Vedios/MASTER TEASER (2).mp4"></video></li>
+            
+            </ul>
+        </div>
+    </div>
+<br>
+<br>
+    <div>
+        
+    </div>
+    </div>
+
+    <!-- JAVASCRIPT CODING  -->
+    <script>
+
+        function videoslider(links){
+            document.querySelector(".slider").src = links;
+        }
+
+    </script>
+    </div>
+    
+</body>
+</html>

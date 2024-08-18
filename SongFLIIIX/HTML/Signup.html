@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../2. CSS/Signup.css">
+    <title>SONGFLIIX</title>
+</head>
+
+<body>
+
+    <header>
+        
+    </header>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form action="../1. HTML/Otp.html">
+                <h1>Create Account</h1>
+                <span>To experience the Joy </span>
+                <br>
+                <input type="text" placeholder="Name" required>
+                <input type="number" placeholder="Mobile Number" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <input type="password" placeholder="Confirm Password" required>
+                <br>
+                <button>Sign Up</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form action="./Mpage1.html">
+                <h1>Sign In</h1>
+                <div class="social-icons">
+                    <a href="https://www.google.com/" target="_blank" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="https://www.instagram.com/v4_panther/" target="_blank" class="icon"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/dashboard" target="_blank" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/praveenkumar-selvaraj-s/" target="_blank" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your email and password </span>
+                <br>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <a href="../1. HTML/FP.html" style="font-weight: bold;">Forget Your Password?</a>
+                <button>Sign In</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Welcome Back!</h1>
+                    <p>Enter your registered credentials to use all of site features</p>
+                    <button class="hidden" id="login">Sign In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Register with your personal details to use all of site features</p>
+                    <button class="hidden" id="register">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="../3. JAVASCRIPT/Signup.js"></script>
+</body>
+
+</html>
